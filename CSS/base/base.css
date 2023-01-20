@@ -1,5 +1,4 @@
 
-
 body,
 body * {
   margin: 0;
@@ -8,77 +7,101 @@ body * {
   box-sizing: border-box;
   background-color: #e5e5e5;
   outline: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
-
-.nav {
-  position: absolute;
-  display: flex;
-  justify-content: center;
+.left-bar {
+  position: relative;
   width: 100px;
   height: 100vh;
-  left: 0;
-  top: 0;
   background-color: #f7f6ff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.logo {
+
+.bit-logo{
   position: absolute;
   width: 68px;
   height: 34px;
- 
-  top: calc(50% - 34px/2 - 384px);
+  left: 16px;
+  top: 52px;
   background-color: #f7f6ff;
 }
 
 .line {
   position: absolute;
-  width: 62.24px;
-  height: 0px;
-  
-  top: 130px;
-  border: 2px solid #C4C4C4;
+  width: 62px;
+  left: 18px;
+  top: 110px;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+nav {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f7f6ff;
+}
+
+nav > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-bottom: 10px;
+  height: 57px;
+  width: 90px;
+  /* background-color: #fff;
+  border-radius: 25px 0px 0px 25px; */
 }
 
 .home {
-  position: absolute;
-  width: 89px;
-  height: 57px;
-  right: 0;
-  top: calc(50% - 57px/2 - 282.5px);
-  background-color: #fff;
-  border-radius: 25px 0px 0px 25px;
-  
-}
-
-.home-logo {
-  position: absolute;
-  top: 16px;
-  bottom: 16px;
-  left: 32px;
-  background-color: #fff;
-
-}
-
-.calender {
-  position: absolute;
-  height: 25px;
-  bottom: 660px;
-}
-
-.cube {
-  position: absolute;
-  height: 25px;
- 
-  top: calc(50% - 25px/2 - 148.5px);
- }
-
- .game {
-  position: absolute;
-  height: 25px;
- 
-  top: 365px;
- }
- span > img {
   background-color: #f7f6ff;
- }
+}
+.calendar {
+  position: absolute;
+  top: 60px;
+  background-color: #f7f6ff;
+}
+.fe {
+  position: absolute;
+  top: 120px;
+  background-color: #f7f6ff;
+}
+.games {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  background-color: #f7f6ff;
+}
+
+nav > a > img {
+  position: absolute;
+  left: 32px;
+  top: 16px;
+  background-color: #f7f6ff;
+}
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  left: 100px;
+  bottom: 0;
+  height: 35px;
+  width: 100%;
+  text-align: center;
+}
+
+.copy-rigth {
+  width: 360px;
+  height: 35px;
+  font-size: 11px;
+  line-height: 35px;
+  color: #02577A;
+  border-top: 1px solid #02577A;
+}
