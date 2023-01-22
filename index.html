@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Figma</title>
+  <link rel="stylesheet" href="./CSS/3rd-party/font-awesome.min.css">
   <link rel="stylesheet" href="./CSS/pages/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,24 +14,47 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="left-bar">
-    <img class="bit-logo" src="./img/logobit.png" alt="logo">
-    <div class="line"></div>
-   <nav>
-      <a class="home" href="#">
-        <img class="home-logo" src="./img/namukas.png" alt="home">
-      </a>
-      <a class="calendar" href="#">
-        <img class="calendar-logo" src="./img/kalendorius.png" alt="calendar">
-      </a>
-      <a class="fe" href="#">
-        <img class="fe-logo" src="./img/cube.png" alt="fe">
-      </a>
-      <a class="games" href="#">
-        <img class="game-logo" src="./img/game.png" alt="game">
-      </a>
-    </nav>
-  </section>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+          <img class="bit-logo" src="./img/logo-BIT.png" alt="BIT-logo">
+      <!-- <li class="nav-item">
+          <div class="line"></div>
+      </li> -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="img/home-grey.png" alt="home">
+          <span class="link-txt">
+            Home
+          </span>
+        </a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="./img/calendar-grey.png" alt="calendar">
+          <span class="link-txt">
+            Calendar
+          </span>
+        </a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="./img/FE.png" alt="FE-components">
+          <span class="link-txt">
+            FE
+          </span>
+        </a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img class="game-img" src="./img/games-grey.png" alt="games">
+          <span class="link-txt">
+            Games
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
   <footer class="footer">
     <p class="copy-rigth">&#169; Baltic Institute of Technology</p>
   </footer>
