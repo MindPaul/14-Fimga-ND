@@ -22,7 +22,7 @@ body {
   height: 100vh;
   position: fixed;
   background-color: #F7F6FF;
-  transition: width 200ms ease;
+  transition: width 100ms ease;
 }
 
 .navbar:hover {
@@ -64,6 +64,8 @@ body {
   margin-left: 10px;
   margin-bottom: 10px;
   align-items: center;
+  
+  
 }
 
 .navbar:hover .nav-link:hover {
@@ -74,6 +76,7 @@ body {
   background: #FFFFFF;
   border-radius: 25px 0px 0px 25px;
   align-items: center;
+  
 }
 
 .link-txt {
